@@ -1,0 +1,39 @@
+div.uploadDiv, /* 选择图片 div */
+div.imgBox{ /* 图片预览 box */
+    width: 130px;
+    height: 130px;
+    margin-right: 10px;
+
+    display: inline-block;
+    overflow: hidden;
+    position: relative;
+}
+
+div.uploadDiv > .uploadBtn, /* 选择图片 input/img */
+div.imgBox > img{ /* 图片预览 img */
+    width: 90%;
+    height: 90%;
+    margin-top: 10%;
+}
+
+/* 选择图片 input */
+div.uploadDiv input[type=file].uploadBtn {
+    position: absolute;
+    opacity: 0; /*不显示*/
+    cursor: pointer;
+}
+
+/* 图片预览 移除图片按钮 */
+div.imgBox > .removeImg{
+    padding: 0px 5px;
+    color: #ffffff;
+    background: red;
+    border-radius: 100%;
+    -moz-box-shadow: 2px 2px 2px #888888; /* 老的 Firefox */
+    box-shadow: 2px 2px 2px #888888;
+    cursor: pointer;
+
+    position: absolute;
+    top: 0px;
+    right: 3px;
+}
